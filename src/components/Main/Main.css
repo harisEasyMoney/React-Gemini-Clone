@@ -36,3 +36,86 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.main .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px,1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.main .card{
+    height:200px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.416);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.main .card img{
+    width: 35px;
+    padding: 5px;
+    position: absolute;
+    background-color: rgb(231, 230, 228);
+    border-radius: 20px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.main .card p{
+    color: rgb(234, 222, 206);
+    font-size: 17px;
+}
+.main .card:hover{
+    background-color: rgba(198, 197, 197, 0.056);
+}
+
+.main-bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 0px 20px;
+    margin: auto;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.837);
+    
+}
+
+.search-box img{
+    width: 24px;
+    cursor: pointer;
+}
+
+.search-box input{
+    background-color: rgba(0, 0, 0, 0.27);
+    color: azure;
+    flex: 1;
+    border: none;
+    outline: none;
+padding: 8px;
+font-size: 18px;
+}
+
+.search-box div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.main .bottom-info{
+    font-size: 13px;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: 300;
+}
